@@ -23,7 +23,7 @@ body {
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
-  height: calc(100vh - 96px);
+  height: calc(100vh - 216px);
 }
 
 #buttons > input {
