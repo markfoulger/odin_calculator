@@ -125,14 +125,15 @@ operatorButtons.forEach(operatorButton => {
 });
 
 document.addEventListener('keydown', e => {
-    e.preventDefault();
     if (e.key.match(/[0-9]|\./)) { // contains 0-9 or full stop
         handleNumberInput(e.key);
     } else if (e.key === 'Backspace') { // backspace button
+        e.preventDefault();
         backspaceInput();
     } else if (e.key.match(/\+|\-|\*|\//)) { // +, -, /, * operator buttons
         handlerOperatorInput(e.key);
     } else if (e.key ==='Enter') {
+        e.preventDefault();
         parseCalculation();
     }
 });
